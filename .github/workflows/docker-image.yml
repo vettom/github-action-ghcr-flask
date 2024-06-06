@@ -16,6 +16,6 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: |
-        docker login --username vettom --password ${{ secrets.GH_PAT }} ghtcr.io
+        docker login --username vettom --password ${{ secrets.GH_PAT }} ghcr.io
         docker build . --file Dockerfile --tag ghcr.io/vettom/gh-action-ghcr-flask:latest
         docker push ghcr.io/vettom/gh-action-ghcr-flask:latest
