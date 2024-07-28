@@ -1,3 +1,5 @@
+<a href="https://vettom.github.io/"><img src="https://vettom.github.io/img/vettom-banner.jpg" alt="vettom.github.io" ></a>
+
 # Task in hand
 
 ## Build and deploy python flask app to container
@@ -26,4 +28,5 @@ deactivate
  - Automate Image tag
  - Automate Helm chart image tag
 
-Stored in GH_PAT
+
+`gh auth token | helm registry login ghcr.io -u propyless --password-stdin`
